@@ -2,3 +2,13 @@ ipykernel
 pandas
 numpy
 seaborn
+pymongo
+requests
+mysql-connector-python
+faker
+sqlalchemy
+pymysql
+dotenv
+psycopg2
+matplotlib
+scikit-learn
