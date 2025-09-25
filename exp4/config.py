@@ -7,8 +7,8 @@ weather_api_key = os.getenv("WEATHER_API_KEY")
 DB_params = {
     "host":f"{os.getenv('HOST')}",
     "database":"weather_reatail_db",
-    "user":f"{os.getenv('USER')}",
-    "password":f"{os.getenv('PASSWORD')}"
+    "user":f"{os.getenv('POSTGRES_USER')}",
+    "password":f"{os.getenv('POSTGRES_PASSWORD')}"
 }
 
 cities = [

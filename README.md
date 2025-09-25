@@ -1,41 +1,56 @@
-📊 Introduction to Data Engineering
+# 📊 Introduction to Data Engineering
 
-Welcome to my Data Engineering repository! 🚀
-This repo documents my journey as a college student exploring the foundational concepts, tools, and workflows that power modern data infrastructure. Inside, you’ll find notes, hands-on exercises, and project work that cover both theory and practice.
+Welcome to my **Data Engineering repository**! 🚀  
+This repository documents my journey as a college student exploring the **foundational concepts, tools, and workflows** that power modern data infrastructure. Inside, you’ll find notes, hands-on exercises, and project work covering both theory and practice.
 
-🧠 What is Data Engineering?
+---
 
-Data Engineering is the discipline of designing, building, and maintaining systems that collect, store, and process data at scale. It forms the backbone of data-driven decision-making, enabling analysts, data scientists, and applications to access clean, reliable, and timely data.
+## 🧠 What is Data Engineering?
 
-🛠️ Core Responsibilities of a Data Engineer
+**Data Engineering** is the discipline of **designing, building, and maintaining systems** that collect, store, and process data at scale. It forms the backbone of **data-driven decision-making**, enabling analysts, data scientists, and applications to access clean, reliable, and timely data.
 
-Data Collection → Ingesting data from APIs, databases, and files
+---
 
-Data Cleaning & Transformation → Ensuring high data quality through preprocessing and formatting
+## 🛠️ Core Responsibilities of a Data Engineer
 
-Data Storage → Designing schemas and managing relational or non-relational databases
+| Responsibility                     | Description                                                           |
+| ---------------------------------- | --------------------------------------------------------------------- |
+| **Data Collection**                | Ingesting data from APIs, databases, and files                        |
+| **Data Cleaning & Transformation** | Ensuring high data quality through preprocessing and formatting       |
+| **Data Storage**                   | Designing schemas and managing relational or non-relational databases |
+| **Pipeline Development**           | Automating workflows with tools like Apache Airflow or Spark          |
+| **Performance Optimization**       | Building scalable and efficient systems                               |
 
-Pipeline Development → Automating workflows with tools like Apache Airflow or Spark
+---
 
-Performance Optimization → Building scalable and efficient systems
+## 🧰 Common Tools & Technologies
 
-🧰 Common Tools & Technologies
-Category	Tools/Technologies
-Programming	Python, SQL
-Data Storage	PostgreSQL, MySQL, MongoDB, BigQuery
-Data Pipelines	Apache Airflow, Luigi, Prefect
-Big Data	Apache Spark, Hadoop
-Cloud Platforms	AWS, Azure, Google Cloud
-ETL Tools	Talend, Informatica, dbt
-⚙️ Setup Instructions
+| Category            | Tools/Technologies                   |
+| ------------------- | ------------------------------------ |
+| **Programming**     | Python, SQL                          |
+| **Data Storage**    | PostgreSQL, MySQL, MongoDB, BigQuery |
+| **Data Pipelines**  | Apache Airflow, Luigi, Prefect       |
+| **Big Data**        | Apache Spark, Hadoop                 |
+| **Cloud Platforms** | AWS, Azure, Google Cloud             |
+| **ETL Tools**       | Talend, Informatica, dbt             |
 
-Before running any scripts in this repo, please make sure you configure your environment variables in a .env file.
-This ensures your API keys and database credentials remain secure and are not hard-coded in the scripts.
+---
 
-1. Create a .env file in the root directory:
+## ⚙️ Setup Instructions
+
+Before running any scripts in this repository, configure your **environment variables** in a `.env` file. This ensures your **API keys** and **database credentials** remain secure and are not hard-coded in scripts.
+
+### 1. Create a `.env` file in the root directory
+
+```bash
 touch .env
+```
 
-2. Add your credentials:
+### 2. Add Your Credentials
+
+Include your API keys and database configurations in the `.env` file:
+
+```ini
 # 🌦️ OpenWeatherMap API Key
 API_KEY=your_api_key_here
 
@@ -48,38 +63,40 @@ DATABASE=weather_retail_db
 # 🍃 MongoDB Database
 MONGO_URI=mongodb://your_user:your_password@host:port
 MONGO_DB=weather_retail_db
+```
 
+⚠️ **Important:** Never commit your `.env` file to GitHub. Add it to `.gitignore`.
 
-⚠️ Never commit your .env file to GitHub. Add it to .gitignore.
+### 3. Install Dependencies
 
-3. Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-🎯 Learning Goals
+---
 
-Understand how data flows through modern systems
+## 🎯 Learning Goals
 
-Build ETL pipelines for structured & unstructured data
+- Understand how data flows through modern systems
+- Build ETL pipelines for structured & unstructured data
+- Explore relational vs. non-relational databases
+- Work with batch and stream processing
+- Apply best practices in data modeling and pipeline design
 
-Explore relational vs. non-relational databases
+---
 
-Work with batch and stream processing
+## 📚 Topics Covered
 
-Apply best practices in data modeling and pipeline design
+- Relational vs. Non-relational Databases
+- SQL for Data Manipulation
+- Batch vs. Stream Processing
+- Hands-on Projects with Python and Pandas
+- API-based Data Ingestion into PostgreSQL & MongoDB
 
-📚 Topics Covered
+---
 
-Relational vs. Non-relational Databases
-
-SQL for Data Manipulation
-
-Batch vs. Stream Processing
-
-Hands-on Projects with Python and Pandas
-
-API-based Data Ingestion into PostgreSQL & MongoDB
-
-🤝 Contribution & Feedback
+## 🤝 Contribution & Feedback
 
 Feel free to explore the folders and notebooks. Each section is designed to reinforce key concepts with practical examples.
+
 Feedback and collaboration are always welcome — let’s learn together! ✨
