@@ -12,3 +12,5 @@ dotenv
 psycopg2
 matplotlib
 scikit-learn
+faker
+streamlit
