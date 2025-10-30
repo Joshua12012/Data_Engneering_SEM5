@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 from db import get_all_employees, add_employee, update_employee, get_roles, delete_employee,get_departments,get_role_byid
 
 st.title("CRUD operations on emplyees db")
@@ -14,8 +15,12 @@ roles_dict = {name: id for id,name in roles}
 if menu=="View":
     st.subheader("All employees")
     data = get_all_employees()
-    for emp in data:
-        st.write(f"{emp[1]} | {emp[2]} | {get_role_byid(emp[3])} | {emp[4]}")
+    # for emp in data:
+    #     st.write(f"{emp[1]} | {emp[2]} | {get_role_byid(emp[3])} | {emp[4]}")
+        # Convert to DataFrame
+    df = pd.DataFrame(data, columns=["ID", "Name", "Department", "Role", "Email"])
+    st.table(df)
+    
 elif menu=="Add":
     st.subheader("Add New Employee")
     name = st.text_input("Name")
