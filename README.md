@@ -1,102 +1,82 @@
-# 📊 Introduction to Data Engineering
+# Data Engineering Portfolio
 
-Welcome to my **Data Engineering repository**! 🚀  
-This repository documents my journey as a college student exploring the **foundational concepts, tools, and workflows** that power modern data infrastructure. Inside, you’ll find notes, hands-on exercises, and project work covering both theory and practice.
+This repository demonstrates practical implementations of data engineering concepts through multiple experiments and projects.
 
----
+## Core Components
 
-## 🧠 What is Data Engineering?
+### 1. Data Cleaning and Preprocessing
+- Email validation and standardization
+- Handling missing values and duplicates
+- Data type validation and conversion
+- Statistical analysis and imputation
 
-**Data Engineering** is the discipline of **designing, building, and maintaining systems** that collect, store, and process data at scale. It forms the backbone of **data-driven decision-making**, enabling analysts, data scientists, and applications to access clean, reliable, and timely data.
+### 2. Database Operations
+- SQLite and PostgreSQL implementations
+- Schema design and table relationships
+- CRUD operations
+- Transaction management
+- Foreign key constraints
 
----
+### 3. Weather Data Pipeline
+**Implementation 1 (exp4):**
+- JSON data handling
+- Configuration management
+- Basic ETL pipeline
+- File-based data storage
 
-## 🛠️ Core Responsibilities of a Data Engineer
+**Implementation 2 (exp5):**
+- Improved modular architecture
+- Enhanced error handling
+- Structured logging
+- Database persistence
 
-| Responsibility                     | Description                                                           |
-| ---------------------------------- | --------------------------------------------------------------------- |
-| **Data Collection**                | Ingesting data from APIs, databases, and files                        |
-| **Data Cleaning & Transformation** | Ensuring high data quality through preprocessing and formatting       |
-| **Data Storage**                   | Designing schemas and managing relational or non-relational databases |
-| **Pipeline Development**           | Automating workflows with tools like Apache Airflow or Spark          |
-| **Performance Optimization**       | Building scalable and efficient systems                               |
+### 4. API Integration
+- REST API consumption
+- Environment variable management
+- Data transformation
+- Database integration
 
----
+### 5. Web Application Development
+**Streamlit Applications (exp6, exp7):**
+- Database models
+- API endpoints
+- Connection pooling
+- ORM implementation
 
-## 🧰 Common Tools & Technologies
+### 6. Data Analysis
+- PostgreSQL integration
+- DataFrame operations
+- Statistical analysis
+- Data visualization
+- Sample data generation
 
-| Category            | Tools/Technologies                   |
-| ------------------- | ------------------------------------ |
-| **Programming**     | Python, SQL                          |
-| **Data Storage**    | PostgreSQL, MySQL, MongoDB, BigQuery |
-| **Data Pipelines**  | Apache Airflow, Luigi, Prefect       |
-| **Big Data**        | Apache Spark, Hadoop                 |
-| **Cloud Platforms** | AWS, Azure, Google Cloud             |
-| **ETL Tools**       | Talend, Informatica, dbt             |
+## Technical Requirements
 
----
-
-## ⚙️ Setup Instructions
-
-Before running any scripts in this repository, configure your **environment variables** in a `.env` file. This ensures your **API keys** and **database credentials** remain secure and are not hard-coded in scripts.
-
-### 1. Create a `.env` file in the root directory
-
-```bash
-touch .env
+### Dependencies
+```
+pandas
+numpy
+requests
+python-dotenv
+flask
+sqlalchemy
+psycopg2-binary
+matplotlib
+seaborn
+faker
 ```
 
-### 2. Add Your Credentials
-
-Include your API keys and database configurations in the `.env` file:
-
+### Environment Setup
+1. Create `.env` file:
 ```ini
-# 🌦️ OpenWeatherMap API Key
-API_KEY=your_api_key_here
-
-# 🗄️ PostgreSQL Database
-HOST=your_postgres_host
-USER=your_postgres_user
-PASSWORD=your_postgres_password
-DATABASE=weather_retail_db
-
-# 🍃 MongoDB Database
-MONGO_URI=mongodb://your_user:your_password@host:port
-MONGO_DB=weather_retail_db
+WEATHER_API_KEY=your_key
+DB_HOST=localhost
+DB_USER=postgres
+DB_PASS=your_password
+DB_NAME=your_database
 ```
 
-⚠️ **Important:** Never commit your `.env` file to GitHub. Add it to `.gitignore`.
-
-### 3. Install Dependencies
-
+2. Install requirements:
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## 🎯 Learning Goals
-
-- Understand how data flows through modern systems
-- Build ETL pipelines for structured & unstructured data
-- Explore relational vs. non-relational databases
-- Work with batch and stream processing
-- Apply best practices in data modeling and pipeline design
-
----
-
-## 📚 Topics Covered
-
-- Relational vs. Non-relational Databases
-- SQL for Data Manipulation
-- Batch vs. Stream Processing
-- Hands-on Projects with Python and Pandas
-- API-based Data Ingestion into PostgreSQL & MongoDB
-
----
-
-## 🤝 Contribution & Feedback
-
-Feel free to explore the folders and notebooks. Each section is designed to reinforce key concepts with practical examples.
-
-Feedback and collaboration are always welcome — let’s learn together! ✨
